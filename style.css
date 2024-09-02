@@ -27,7 +27,7 @@ main{
     height: 100vh;
 }
 .container {
-    max-width: 275px;
+    max-width: 375px;
     display: grid;
     font-family: 'Hanken Grotesk',sans-serif;
 
@@ -45,11 +45,12 @@ main{
     align-items: center;
     flex-direction: column;
     margin-inline: 2em;
+    min-height: 355px;
 }
 .first-container .text div{
     background-image: linear-gradient(var(--Violet-blue),var(--Persian-blue));
-    width: 105px;
-    height: 105px;
+    width: 135px;
+    height: 135px;
     border-radius: 50%;
     text-align: center;
 }
@@ -59,23 +60,25 @@ main{
 }
 .text #p-1{
     color: var(--Light-lavender);
-    margin-top: 0;
+    margin-bottom: 2em;
+    font-weight: 700;
 }
 .text #p-2{
     margin-top: 0.3em;
-    color: var(--Light-lavender);
-    font-size: 0.70rem;
+    color: hsl(241deg 100% 89% / 42%);
+
 }
 .first-container #p-3{
     margin: 1em;
     text-align: center;
     color: var(--Light-lavender);
-    font-size: 0.68rem;
     line-height: 1.7em;
 }
-.first-container h4{
+.first-container h3{
     margin-top: 1em;
     margin-bottom: 0;
+    font-size: x-large;
+    font-weight: 100;
 }
 .second-container{
     margin-inline: 1.3em;
@@ -106,7 +109,7 @@ main{
     margin-block: 0.9em;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8rem;
+    font-weight: 600;
 }
 .image{
     display: flex;
@@ -136,7 +139,6 @@ a{
     padding-block: 0.8em;
     text-decoration: none;
     border-radius: 2em;
-    font-size: 0.78rem;
 }
 .second-container a:hover{
     background-image: linear-gradient(var(--Light-slate-blue) -2%, var(--Light-royal-blue) 78%);
@@ -148,7 +150,8 @@ a{
     }
     .container{
         grid-template-columns: 1fr 1fr;
-        max-width: 405px;
+        max-width: 610px;
+        min-height: 425px;
         box-shadow: 0.5em 0.5em 1em #0000001a;
         border-radius: 1.5em;
     }
@@ -164,6 +167,9 @@ a{
     .first-container #p-3{
         margin: unset;
         margin-top: 1.5em;
-        font-size: 0.63rem;
+        font-size:1.12rem;
+    }
+    .second-container a{
+        margin-top: 2.5em;
     }
 }
